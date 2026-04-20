@@ -1,0 +1,26 @@
+[project]
+name = "pet-breed-classification"
+version = "0.1.0"
+description = "Pet breed classification project"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "Pillow>=9.0.0",
+    "matplotlib>=3.7.0",
+    "numpy>=1.24.0",
+    "flask>=2.3.0",
+    "requests>=2.31.0",
+    "tqdm>=4.66.0",
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+exclude = ["data", "models", "templates"]
